@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/extra.css" />
+    <title>Sepet</title>
+  </head>
+  <body>
+    <div class="shop-container">
+      <div class="product-list">
+        <h1>Ürünler</h1>
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHI0Sl4f0BHOZKbB2vAa2OYm1ipRs1jqiJJw&s" width="100px" height="100px" style="background-color: green;">
+          <div class="content">
+            <h2>Ürün 1</h2>
+            <p>Fiyat: 100 $</p>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Ürün 1', 100)">
+            Sepete Ekle
+          </button>
+        </div>
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHI0Sl4f0BHOZKbB2vAa2OYm1ipRs1jqiJJw&s" width="100px" height="100px" style="background-color: green;">
+          <div class="content">
+            <h2>Ürün 2</h2>
+            <p>Fiyat: 200 $</p>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Ürün 2', 200)">
+            Sepete Ekle
+          </button>
+        </div>
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHI0Sl4f0BHOZKbB2vAa2OYm1ipRs1jqiJJw&s" width="100px" height="100px" style="background-color: green;">
+          <div class="content">
+            <h2>Ürün 3</h2>
+            <p>Fiyat: 300 $</p>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Ürün 3', 300)">
+            Sepete Ekle
+          </button>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2>Sepetiniz</h2>
+        <ul class="cart-list">
+          <!-- Sepet öğeleri buraya eklenecek -->
+        </ul>
+        <hr>
+        <p>Toplam: <span id="toplam-fiyat">0$</span> </p>
+      </div>
+    </div>
+  </body>
+  <script src="./js/extra.js"></script>
+</html>
